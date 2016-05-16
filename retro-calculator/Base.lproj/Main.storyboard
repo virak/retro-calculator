@@ -60,7 +60,7 @@
                                 <animations/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SiJ-Z2-G3T">
-                                <rect key="frame" x="189" y="188" width="199" height="315"/>
+                                <rect key="frame" x="189" y="188" width="199" height="365"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oea-Yt-4Of">
                                         <rect key="frame" x="0.0" y="0.0" width="199" height="55"/>
@@ -272,6 +272,18 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e6-5b-aMC">
+                                        <rect key="frame" x="0.0" y="325" width="199" height="40"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="199" id="3CM-bo-C9q"/>
+                                            <constraint firstAttribute="height" constant="40" id="D6h-cE-zzv"/>
+                                        </constraints>
+                                        <state key="normal" image="clear"/>
+                                        <connections>
+                                            <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ov5-eg-c7L"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                             </stackView>
@@ -299,7 +311,7 @@
                             <constraint firstItem="O7N-Fz-SFd" firstAttribute="trailing" secondItem="xwr-yS-FXV" secondAttribute="trailing" constant="65" id="aSm-K6-7qw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZGT-Dn-Ga9" secondAttribute="bottom" id="dvJ-IK-CdN"/>
                             <constraint firstItem="SiJ-Z2-G3T" firstAttribute="centerX" secondItem="O7N-Fz-SFd" secondAttribute="centerX" id="gCf-Ph-IDh"/>
-                            <constraint firstItem="SiJ-Z2-G3T" firstAttribute="centerY" secondItem="O7N-Fz-SFd" secondAttribute="centerY" constant="40" id="jCI-Yc-xnA"/>
+                            <constraint firstItem="SiJ-Z2-G3T" firstAttribute="centerY" secondItem="O7N-Fz-SFd" secondAttribute="centerY" constant="35" id="jCI-Yc-xnA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xkB-SO-ykw" secondAttribute="bottom" id="jXv-a3-cQZ"/>
                             <constraint firstItem="O7N-Fz-SFd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mIe-bV-1jd"/>
                             <constraint firstItem="xkB-SO-ykw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nH9-dQ-4lL"/>
@@ -327,6 +339,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
